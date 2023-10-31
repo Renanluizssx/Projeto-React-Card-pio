@@ -1,0 +1,17 @@
+.div-container-produtos {
+    border:1px solid yellow;
+    height:550px;
+    width:31.2%;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    text-align: left;
+}
+.div-container-produtos:nth-child(n + 4) {
+    width:490px;
+}
+img {
+    height:100%;
+    width:100%;
+}
