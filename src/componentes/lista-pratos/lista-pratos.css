@@ -19,8 +19,8 @@
   align-items: center;
 }
 .menus img {
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 15px;
 }
 nav {
   display: flex;
@@ -35,8 +35,8 @@ nav,
 .menus {
   display: flex;
   background-color: #e9e9ed;
-  width: 150px;
-  height: 40px;
+  width: 130px;
+  height: 30px;
   justify-content: space-evenly;
   align-items: center;
   margin-left: 10px;
@@ -61,7 +61,7 @@ span {
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 15px;
+  top: 8px;
   left: 8px;
 }
 .container-input input {
@@ -70,14 +70,12 @@ span {
   height: 35px;
   border-radius: 15px;
   border: 1px solid #000;
-  height: 50px;
-  font-size: 15px;
+  height: 35px;
 }
 h2 {
   font-family: "Dancing Script", cursive;
   color: #daa520;
   margin-bottom: 20px;
-  font-size: 35px;
 }
 main {
   font-family: "Poppins", sans-serif;

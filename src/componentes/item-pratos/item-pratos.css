@@ -19,14 +19,17 @@ img {
   display: flex;
   width: 100%;
   flex-direction: column;
+  height: 50%;
+  position: relative;
 }
 .span-categoria {
   color: #daa520;
 }
 .span-preco {
   font-weight: bold;
-  display: flex;
-  justify-content: flex-end;
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
 }
 .paragrafo {
   display: flex;
