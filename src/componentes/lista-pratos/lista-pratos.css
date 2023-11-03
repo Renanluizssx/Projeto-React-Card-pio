@@ -1,72 +1,77 @@
 .container-menus {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .container-produtos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
 }
 .itens-produtos {
-    display: flex;
-    flex-direction: row;
-    background-color: #f2f2f2;
-    flex-wrap: wrap;
-    justify-content:center ;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  background-color: #f2f2f2;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .menus img {
-    width:15px;
-    height: 15px;
-
+  width: 15px;
+  height: 15px;
 }
 nav {
-    display: flex;
-    justify-content: center;
-
+  display: flex;
+  justify-content: center;
 }
-nav, .container-input, .container-produtos {
-    width: 100%;
-    max-width: 1024px;
+nav,
+.container-input,
+.container-produtos {
+  width: 100%;
+  max-width: 1024px;
 }
 .menus {
-    display: flex;
-    background-color: #e9e9ed;
-    width:120px;
-    height:30px;
-    justify-content: center;
-    align-items: center;
-    margin-left:10px;
-    cursor: pointer;
-    padding-right:5px;
+  display: flex;
+  background-color: #e9e9ed;
+  width: 120px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  cursor: pointer;
+  padding-right: 5px;
 }
 span {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 .menus:hover {
-    background-color: #daa51f;
+  background-color: #daa51f;
 }
 .container-input {
-    display: flex;
-    position: relative;
-    width:90%;
-    
+  display: flex;
+  position: relative;
+  width: 90%;
 }
 .container-input img {
-    width:20px;
-    height:20px;
-    position: absolute;
-    top:8px;
-    left:8px;
-
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
 }
 .container-input input {
-    padding-left:30px;
-    width: 100%;
-    height:35px;
-    border-radius: 15px;
-    border:1px solid #000;
+  padding-left: 30px;
+  width: 100%;
+  height: 35px;
+  border-radius: 15px;
+  border: 1px solid #000;
+}
+h2 {
+  font-family: "Dancing Script", cursive;
+  color: #daa520;
+}
+main {
+  font-family: "Poppins", sans-serif;
 }

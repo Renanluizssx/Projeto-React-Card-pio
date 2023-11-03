@@ -1,25 +1,28 @@
 header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .background-topo {
-    background-image: url("../../Assets/banner.png");
-    height:300px;
-    width:100%;
-    background-repeat: no-repeat;
-    background-size:cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    max-width: 1024px;
+  background-image: url("../../Assets/banner.png");
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1024px;
 }
 .background-topo h1 {
-    color:#f5f6f3;
-    text-shadow:1px 0px 10px #e0ce72;
+  color: #f5f6f3;
+  text-shadow: 1px 0px 10px #e0ce72;
+  font-family: "Poppins", sans-serif;
 }
 .background-topo p {
-    text-align: center;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  color: #daa520;
 }
