@@ -300,4 +300,3 @@ export const produtos = [
     imagem: saladaNicoise,
   },
 ];
-
