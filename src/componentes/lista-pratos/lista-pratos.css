@@ -84,3 +84,5 @@ main {
 input {
   color: #daa520;
 }
+@media screen and(min-width:978px) and (max-width: 1060px) {
+}
