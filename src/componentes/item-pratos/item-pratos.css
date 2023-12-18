@@ -40,3 +40,33 @@ img {
 .span-descricao {
   margin: 0px;
 }
+@media screen and (min-width: 300px) and (max-width: 764px) {
+  .div-container-produtos {
+    width: 100%;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 765px) and (max-width: 1059px) {
+  .container-padding {
+    width: 50%;
+  }
+  .div-container-produtos {
+    width: 47%;
+    height: 400px;
+  }
+  .div-container-produtos:nth-child(n + 4) {
+    width: 47%;
+  }
+  .div-container-produtos:nth-child(n + 5) {
+    width: 96.5%;
+    height: 400px;
+  }
+
+  .container-padding {
+    width: 100%;
+  }
+  img {
+    height: 250px;
+    width: 100%;
+  }
+}

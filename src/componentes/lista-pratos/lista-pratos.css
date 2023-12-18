@@ -84,5 +84,19 @@ main {
 input {
   color: #daa520;
 }
-@media screen and(min-width:978px) and (max-width: 1060px) {
+@media screen and (min-width: 300px) and (max-width: 764px) {
+  .div-container-produtos {
+    width: 100%;
+    height: 400px;
+  }
+  .container-menus {
+    width: 100%;
+  }
+
+  nav,
+  .container-input,
+  .container-produtos {
+    max-width: 1000px;
+    width: 100%;
+  }
 }
