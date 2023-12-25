@@ -75,7 +75,7 @@ function Pratos() {
       <h2>Cardápio</h2>
       <div className="container-produtos">
         <section className="itens-produtos">
-          {listaProdutos.map((produto) => (
+          {listaProdutos?.map((produto) => (
             <ItemPratos
               key={produto.id}
               nome={produto.nome}
