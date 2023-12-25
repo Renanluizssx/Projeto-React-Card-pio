@@ -1,13 +1,12 @@
-
-import './App.css';
-import Topo from "./componentes/topo"
-import ListaProdutos from "./componentes/lista-pratos"
+import "./App.css";
+import Topo from "./componentes/topo/Topo.js";
+import ListaPratos from "./componentes/listaPratos/ListaPratos.js";
 function App() {
   return (
     <div className="App">
-      <Topo/>
-      <ListaProdutos/>
-      </div>
+      <Topo />
+      <ListaPratos />
+    </div>
   );
 }
 

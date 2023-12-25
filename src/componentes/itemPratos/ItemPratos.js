@@ -1,4 +1,4 @@
-import "./item-pratos.css";
+import "./ItemPratos.css";
 function ItemPratos({ nome, categoria, preco, descricao, imagem }) {
   return (
     <div className="div-container-produtos">

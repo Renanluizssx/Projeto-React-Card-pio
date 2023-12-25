@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "./lista-pratos.css";
-import ItemPratos from "../item-pratos";
+import "./ListaPratos.css";
+import ItemPratos from "../itemPratos/ItemPratos.js";
 import Entradas from "../../Assets/entrada.png";
 import Massas from "../../Assets/massa.png";
 import Carnes from "../../Assets/carne.png";
@@ -8,9 +8,13 @@ import Bebidas from "../../Assets/bebidas.png";
 import Saladas from "../../Assets/salada.png";
 import Sobremesas from "../../Assets/sobremesa.png";
 import Lupa from "../../Assets/lupa.png";
-import { filtrarProduto, retornaProdutos, buscar } from "../serviços";
+import {
+  filtrarProduto,
+  retornaProdutos,
+  buscar,
+} from "../servicos/TratamentoDosDados";
 
-function Pratos() {
+function ListaPratos() {
   const [listaProdutos, setListaProdutos] = useState(
     filtrarProduto("Entradas")
   );
@@ -91,4 +95,4 @@ function Pratos() {
   );
 }
 
-export default Pratos;
+export default ListaPratos;
