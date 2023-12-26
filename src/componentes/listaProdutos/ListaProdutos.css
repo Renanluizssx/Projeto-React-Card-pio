@@ -1,0 +1,16 @@
+.container-produtos {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+.itens-produtos {
+  display: flex;
+  flex-direction: row;
+  background-color: #f2f2f2;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
