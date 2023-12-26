@@ -1,0 +1,26 @@
+.container-input {
+  display: flex;
+  position: relative;
+  width: 90%;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 1024px;
+}
+.container-input img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+.container-input input {
+  padding-left: 30px;
+  width: 100%;
+  height: 35px;
+  border-radius: 15px;
+  border: 1px solid #000;
+  height: 35px;
+  width: 100%;
+  max-width: 1024px;
+  color: #daa520;
+}

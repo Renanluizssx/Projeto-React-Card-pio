@@ -1,4 +1,5 @@
 import Lupa from "../../assets/lupa.png";
+import "./BuscaProdutos.css";
 export default function BuscaProduto({ buscaProduto, textoBusca }) {
   return (
     <div className="container-input">
