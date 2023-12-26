@@ -5,7 +5,7 @@ header {
 }
 
 .background-topo {
-  background-image: url("../../Assets/banner.png");
+  background-image: url("../../assets/banner.png");
   height: 300px;
   width: 100%;
   background-repeat: no-repeat;
