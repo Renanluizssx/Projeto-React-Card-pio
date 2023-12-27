@@ -31,9 +31,7 @@ function ListaPratos() {
         setListaProdutos={setListaProdutos}
         setTextoBusca={setTextoBusca}
       />
-
       <BuscaProduto buscaProduto={buscaProduto} textoBusca={textoBusca} />
-      <h2>Cardápio</h2>
       <ListaProdutos listaProdutos={listaProdutos} />
     </main>
   );

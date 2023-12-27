@@ -13,6 +13,12 @@
   justify-content: center;
   align-items: center;
 }
+h2 {
+  font-family: "Dancing Script", cursive;
+  color: #daa520;
+  margin-bottom: 20px;
+  text-align: center;
+}
 @media screen and (min-width: 300px) and (max-width: 764px) {
   .itens-produtos {
     width: 100%;
