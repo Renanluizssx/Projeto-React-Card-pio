@@ -18,6 +18,7 @@ h2 {
   color: #daa520;
   margin-bottom: 20px;
   text-align: center;
+  font-size: 35px;
 }
 @media screen and (min-width: 300px) and (max-width: 764px) {
   .itens-produtos {

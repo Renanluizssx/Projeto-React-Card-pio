@@ -1,14 +1,14 @@
 .div-container-produtos {
   border: 1px solid yellow;
   height: 550px;
-  width: 31.2%;
+  width: 31%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin: 10px;
 }
 .div-container-produtos:nth-child(n + 4) {
-  width: 100%;
+  width: 47.5%;
 }
 img {
   height: 100%;
@@ -46,10 +46,10 @@ img {
     height: 400px;
   }
   img {
-    height: 250px;
+    height: 200px;
   }
 }
-@media screen and (min-width: 765px) and (max-width: 1059px) {
+@media screen and (min-width: 765px) and (max-width: 1023px) {
   .container-padding {
     width: 50%;
   }
@@ -63,6 +63,26 @@ img {
   .div-container-produtos:nth-child(n + 5) {
     width: 96.5%;
     height: 400px;
+  }
+
+  .container-padding {
+    width: 100%;
+  }
+  img {
+    height: 250px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1443px) {
+  .container-padding {
+    width: 50%;
+  }
+  .div-container-produtos {
+    width: 31%;
+    height: 400px;
+  }
+  .div-container-produtos:nth-child(n + 4) {
+    width: 47.5%;
   }
 
   .container-padding {
