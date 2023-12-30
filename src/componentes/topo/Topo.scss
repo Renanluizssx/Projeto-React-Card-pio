@@ -1,0 +1,8 @@
+@import "../../styles/funcoes.scss";
+Header {
+  @include alignCenter();
+}
+.background-topo {
+  @include backgroundTopo();
+}
+@include mdTopo;

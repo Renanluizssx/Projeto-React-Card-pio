@@ -1,0 +1,8 @@
+@import "../../styles/funcoes.scss";
+
+.div-container-produtos {
+  @include divContainerProdutos();
+}
+@include mdItemPratos();
+@include lgItemPratos();
+@include xlItemPratos();

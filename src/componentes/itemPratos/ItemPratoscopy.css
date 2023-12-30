@@ -7,14 +7,14 @@
   flex-direction: column;
   margin: 10px;
 }
-.div-container-produtos:nth-child(n+4) {
+.div-container-produtos:nth-child(n + 4) {
   width: 47.5%;
 }
-.div-container-produtos img {
+img {
   height: 100%;
   width: 100%;
 }
-.div-container-produtos .container-padding {
+.container-padding {
   padding: 5px;
   display: flex;
   width: 100%;
@@ -22,25 +22,24 @@
   height: 50%;
   position: relative;
 }
-.div-container-produtos .span-categoria {
+.span-categoria {
   color: #daa520;
 }
-.div-container-produtos .span-preco {
+.span-preco {
   font-weight: bold;
   position: absolute;
   bottom: 0px;
   right: 10px;
 }
-.div-container-produtos .paragrafo {
+.paragrafo {
   display: flex;
   flex-direction: column;
 }
-.div-container-produtos .span-categoria,
-.div-container-produtos .span-preco,
-.div-container-produtos .span-descricao {
+.span-categoria,
+.span-preco,
+.span-descricao {
   margin: 0px;
 }
-
 @media screen and (min-width: 300px) and (max-width: 764px) {
   .div-container-produtos {
     width: 100%;
@@ -49,37 +48,34 @@
   img {
     height: 200px;
   }
-  .div-container-produtos:nth-child(n+4) {
+  .div-container-produtos:nth-child(n + 4) {
     width: 100%;
   }
 }
-.container-padding {
-  width: 50%;
-}
+@media screen and (min-width: 765px) and (max-width: 1023px) {
+  .container-padding {
+    width: 50%;
+  }
+  .div-container-produtos {
+    width: 47%;
+    height: 400px;
+  }
+  .div-container-produtos:nth-child(n + 4) {
+    width: 47%;
+  }
+  .div-container-produtos:nth-child(n + 5) {
+    width: 96.5%;
+    height: 400px;
+  }
 
-.div-container-produtos {
-  width: 47%;
-  height: 400px;
+  .container-padding {
+    width: 100%;
+  }
+  img {
+    height: 250px;
+    width: 100%;
+  }
 }
-
-.div-container-produtos:nth-child(n+4) {
-  width: 47%;
-}
-
-.div-container-produtos:nth-child(n+5) {
-  width: 96.5%;
-  height: 400px;
-}
-
-.container-padding {
-  width: 100%;
-}
-
-img {
-  height: 250px;
-  width: 100%;
-}
-
 @media screen and (min-width: 1024px) and (max-width: 1443px) {
   .container-padding {
     width: 50%;
@@ -88,9 +84,10 @@ img {
     width: 31%;
     height: 400px;
   }
-  .div-container-produtos:nth-child(n+4) {
+  .div-container-produtos:nth-child(n + 4) {
     width: 47.5%;
   }
+
   .container-padding {
     width: 100%;
   }
@@ -98,4 +95,4 @@ img {
     height: 250px;
     width: 100%;
   }
-}/*# sourceMappingURL=itemPratos.css.map */
+}

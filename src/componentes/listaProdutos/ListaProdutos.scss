@@ -1,0 +1,12 @@
+@import "../../styles/funcoes.scss";
+
+.container-produtos {
+  @include containerProdutos();
+}
+.itens-produtos {
+  @include itensProdutos();
+}
+h2 {
+  @include h2ListaProdutos();
+}
+@include md();

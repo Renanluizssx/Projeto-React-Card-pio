@@ -1,0 +1,14 @@
+@import "../../styles/funcoes.scss";
+.container-input {
+  @include containerInput();
+}
+.menus {
+  @include menu();
+}
+nav {
+  @include nav();
+}
+span {
+  @include spanMenuCardapio();
+}
+@include mdMenuCardapio();

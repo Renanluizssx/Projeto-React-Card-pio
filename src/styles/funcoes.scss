@@ -1,0 +1,227 @@
+//style functions to the Topo.js
+@mixin alignCenter() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin backgroundTopo() {
+  background-image: url("../../assets/banner.png");
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include alignCenter();
+  flex-direction: column;
+  max-width: 1024px;
+  h1 {
+    color: #f5f6f3;
+    text-shadow: 1px 0px 10px #daa520;
+    font-family: "Poppins", sans-serif;
+    font-size: 60px;
+  }
+  p {
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    color: #daa520;
+    font-size: 30px;
+  }
+}
+@mixin mdTopo() {
+  @media screen and (min-width: 300px) and (max-width: 764px) {
+    .background-topo {
+      max-width: none;
+      h1 {
+        font-size: 40px;
+      }
+    }
+    header {
+      width: 100%;
+      padding: 0px;
+    }
+  }
+}
+//Style functions to the MenuCardapio.js
+@mixin containerInput() {
+  @include alignCenter();
+  flex-direction: column;
+}
+@mixin menu() {
+  @include alignCenter();
+  background-color: #e9e9ed;
+  width: 150px;
+  height: 40px;
+  margin-left: 10px;
+  cursor: pointer;
+  padding-right: 5px;
+  border-radius: 5px;
+  margin: 20px 0px 20px 0px;
+  font-weight: bold;
+  img {
+    width: 15px;
+    height: 15px;
+  }
+  &:hover {
+    background-color: #daa51f;
+  }
+}
+@mixin nav() {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1024px;
+}
+@mixin spanMenuCardapio() {
+  margin-left: 10px;
+}
+@mixin mdMenuCardapio() {
+  @media screen and (min-width: 300px) and (max-width: 764px) {
+    nav {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      width: 100%;
+    }
+  }
+}
+//Style functions to the ListaProduto.js
+
+@mixin containerProdutos() {
+  @include alignCenter();
+  width: 100%;
+  max-width: 1024px;
+}
+@mixin itensProdutos() {
+  @include alignCenter();
+  flex-direction: row;
+  background-color: #f2f2f2;
+  flex-wrap: wrap;
+}
+@mixin h2ListaProdutos() {
+  font-family: "Dancing Script", cursive;
+  color: #daa520;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 35px;
+}
+@mixin md() {
+  @media screen and (min-width: 300px) and (max-width: 764px) {
+    .itens-produtos {
+      width: 100%;
+    }
+  }
+}
+// style functions to the ListaPratos.js
+@mixin main() {
+  @include alignCenter();
+  font-family: "Poppins", sans-serif;
+  flex-direction: column;
+}
+@mixin mdMain() {
+  @media screen and (min-width: 300px) and (max-width: 764px) {
+    main {
+      padding: 50px 25px;
+    }
+  }
+}
+// style functions to the ItemPratos.js
+@mixin divContainerProdutos() {
+  border: 1px solid yellow;
+  height: 550px;
+  width: 31%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+  &:nth-child(n + 4) {
+    width: 47.5%;
+  }
+  img {
+    height: 100%;
+    width: 100%;
+  }
+  .container-padding {
+    padding: 5px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 50%;
+    position: relative;
+  }
+  .span-categoria {
+    color: #daa520;
+  }
+  .span-preco {
+    font-weight: bold;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+  }
+  .paragrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .span-categoria,
+  .span-preco,
+  .span-descricao {
+    margin: 0px;
+  }
+}
+@mixin mdItemPratos() {
+  @media screen and (min-width: 300px) and (max-width: 764px) {
+    .div-container-produtos {
+      width: 100%;
+      height: 400px;
+    }
+    img {
+      height: 200px;
+    }
+    .div-container-produtos:nth-child(n + 4) {
+      width: 100%;
+    }
+  }
+}
+@mixin lgItemPratos() {
+  .container-padding {
+    width: 50%;
+  }
+  .div-container-produtos {
+    width: 47%;
+    height: 400px;
+  }
+  .div-container-produtos:nth-child(n + 4) {
+    width: 47%;
+  }
+  .div-container-produtos:nth-child(n + 5) {
+    width: 96.5%;
+    height: 400px;
+  }
+
+  .container-padding {
+    width: 100%;
+  }
+  img {
+    height: 250px;
+    width: 100%;
+  }
+}
+@mixin xlItemPratos() {
+  @media screen and (min-width: 1024px) and (max-width: 1443px) {
+    .container-padding {
+      width: 50%;
+    }
+    .div-container-produtos {
+      width: 31%;
+      height: 400px;
+    }
+    .div-container-produtos:nth-child(n + 4) {
+      width: 47.5%;
+    }
+
+    .container-padding {
+      width: 100%;
+    }
+    img {
+      height: 250px;
+      width: 100%;
+    }
+  }
+}
