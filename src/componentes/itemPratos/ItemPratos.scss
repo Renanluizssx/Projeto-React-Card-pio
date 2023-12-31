@@ -3,6 +3,7 @@
 .div-container-produtos {
   @include divContainerProdutos();
 }
+
 @include mdItemPratos();
 @include lgItemPratos();
 @include xlItemPratos();
