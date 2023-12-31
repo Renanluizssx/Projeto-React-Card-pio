@@ -1,5 +1,10 @@
 @import "../../styles/funcoes.scss";
+@import "../../styles/variaveis.scss";
 main {
   @include main();
 }
-@include mdMain();
+@include telasPequenas($min300px, $max764px) {
+  main {
+    padding: 50px 25px;
+  }
+}

@@ -29,7 +29,7 @@ Header {
   font-size: 30px;
 }
 
-@media screen and (min-width: 300px) and (max-width: 764px) {
+@media screen and (min-width: 300px) and (max-width: 1024px) {
   .background-topo {
     max-width: none;
   }

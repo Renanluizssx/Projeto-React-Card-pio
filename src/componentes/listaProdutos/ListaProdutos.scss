@@ -1,4 +1,5 @@
 @import "../../styles/funcoes.scss";
+@import "../../styles/variaveis.scss";
 
 .container-produtos {
   @include containerProdutos();
@@ -9,4 +10,8 @@
 h2 {
   @include h2ListaProdutos();
 }
-@include md();
+@include telasPequenas() {
+  .itens-produtos {
+    width: 100%;
+  }
+}

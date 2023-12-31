@@ -1,8 +1,21 @@
 @import "../../styles/funcoes.scss";
+@import "../../styles/variaveis.scss";
 Header {
   @include alignCenter();
 }
 .background-topo {
   @include backgroundTopo();
 }
-@include mdTopo;
+@include telasPequenas($min300px, $max764px) {
+  header {
+    width: 100%;
+    padding: 0px;
+
+    .background-topo {
+      max-width: none;
+      h1 {
+        font-size: 40px;
+      }
+    }
+  }
+}

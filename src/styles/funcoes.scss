@@ -1,4 +1,22 @@
+//BreakPoints
+@mixin telasPequenas($min300px, $max764px) {
+  @media screen and (min-width: $min300px) and (max-width: $max764px) {
+    @content;
+  }
+}
+@mixin telasMedias($min765px, $max1023px) {
+  @media screen and (min-width: $min765px) and (max-width: $max1023px) {
+    @content;
+  }
+}
+@mixin telasGrandes($min1024px, $max1443px) {
+  @media screen and (min-width: $min1024px) and (max-width: $max1443px) {
+    @content;
+  }
+}
+
 //style functions to the Topo.js
+@import "./variaveis.scss";
 @mixin alignCenter() {
   display: flex;
   align-items: center;
@@ -7,39 +25,26 @@
 @mixin backgroundTopo() {
   background-image: url("../../assets/banner.png");
   height: 300px;
-  width: 100%;
+  width: $Porcento100;
   background-repeat: no-repeat;
   background-size: cover;
   @include alignCenter();
   flex-direction: column;
-  max-width: 1024px;
+  max-width: $max1024px;
   h1 {
     color: #f5f6f3;
-    text-shadow: 1px 0px 10px #daa520;
-    font-family: "Poppins", sans-serif;
+    text-shadow: 1px 0px 10px $colorDaa520;
+    font-family: $fontPoppinsSansSerif;
     font-size: 60px;
   }
   p {
     text-align: center;
-    font-family: "Dancing Script", cursive;
-    color: #daa520;
+    font-family: $fontDancingScript;
+    color: $colorDaa520;
     font-size: 30px;
   }
 }
-@mixin mdTopo() {
-  @media screen and (min-width: 300px) and (max-width: 764px) {
-    .background-topo {
-      max-width: none;
-      h1 {
-        font-size: 40px;
-      }
-    }
-    header {
-      width: 100%;
-      padding: 0px;
-    }
-  }
-}
+
 //Style functions to the MenuCardapio.js
 @mixin containerInput() {
   @include alignCenter();
@@ -61,33 +66,24 @@
     height: 15px;
   }
   &:hover {
-    background-color: #daa51f;
+    background-color: $colorDaa520;
   }
 }
 @mixin nav() {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  max-width: 1024px;
+  width: $Porcento100;
+  max-width: $max1024px;
 }
 @mixin spanMenuCardapio() {
   margin-left: 10px;
-}
-@mixin mdMenuCardapio() {
-  @media screen and (min-width: 300px) and (max-width: 764px) {
-    nav {
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      width: 100%;
-    }
-  }
 }
 //Style functions to the ListaProduto.js
 
 @mixin containerProdutos() {
   @include alignCenter();
-  width: 100%;
-  max-width: 1024px;
+  width: $Porcento100;
+  max-width: $max1024px;
 }
 @mixin itensProdutos() {
   @include alignCenter();
@@ -96,31 +92,17 @@
   flex-wrap: wrap;
 }
 @mixin h2ListaProdutos() {
-  font-family: "Dancing Script", cursive;
-  color: #daa520;
+  font-family: $fontDancingScript;
+  color: $colorDaa520;
   margin-bottom: 20px;
   text-align: center;
   font-size: 35px;
 }
-@mixin md() {
-  @media screen and (min-width: 300px) and (max-width: 764px) {
-    .itens-produtos {
-      width: 100%;
-    }
-  }
-}
 // style functions to the ListaPratos.js
 @mixin main() {
   @include alignCenter();
-  font-family: "Poppins", sans-serif;
+  font-family: $fontPoppinsSansSerif;
   flex-direction: column;
-}
-@mixin mdMain() {
-  @media screen and (min-width: 300px) and (max-width: 764px) {
-    main {
-      padding: 50px 25px;
-    }
-  }
 }
 // style functions to the ItemPratos.js
 @mixin divContainerProdutos() {
@@ -137,14 +119,14 @@
   }
 
   img {
-    height: 100%;
-    width: 100%;
+    height: $Porcento100;
+    width: $Porcento100;
   }
 
   .container-padding {
     padding: 5px;
     display: flex;
-    width: 100%;
+    width: $Porcento100;
     flex-direction: column;
     height: 50%;
     position: relative;
@@ -154,7 +136,7 @@
       flex-direction: column;
 
       .span-categoria {
-        color: #daa520;
+        color: $colorDaa520;
       }
 
       .span-preco {
@@ -166,66 +148,7 @@
     }
   }
 }
-@mixin mdItemPratos() {
-  @media screen and (min-width: 300px) and (max-width: 764px) {
-    .div-container-produtos {
-      width: 100%;
-      height: 400px;
-    }
-    .div-container-produtos img {
-      height: 200px;
-    }
-    .div-container-produtos:nth-child(n + 4) {
-      width: 100%;
-    }
-  }
-}
-@mixin lgItemPratos() {
-  .container-padding {
-    width: 50%;
-  }
-  .div-container-produtos {
-    width: 47%;
-    height: 400px;
-  }
-  .div-container-produtos:nth-child(n + 4) {
-    width: 47%;
-  }
-  .div-container-produtos:nth-child(n + 5) {
-    width: 96.5%;
-    height: 400px;
-  }
 
-  .container-padding {
-    width: 100%;
-  }
-  .div-container-produtos img {
-    height: 250px;
-    width: 100%;
-  }
-}
-@mixin xlItemPratos() {
-  @media screen and (min-width: 1024px) and (max-width: 1443px) {
-    .container-padding {
-      width: 50%;
-    }
-    .div-container-produtos {
-      width: 31%;
-      height: 400px;
-    }
-    .div-container-produtos:nth-child(n + 4) {
-      width: 47.5%;
-    }
-
-    .container-padding {
-      width: 100%;
-    }
-    .div-container-produtos img {
-      height: 250px;
-      width: 100%;
-    }
-  }
-}
 //styles to the BuscaProdutos.js
 
 @mixin containerInput() {
@@ -233,8 +156,8 @@
   position: relative;
   width: 90%;
   margin-bottom: 20px;
-  width: 100%;
-  max-width: 1024px;
+  width: $Porcento100;
+  max-width: $max1024px;
   img {
     width: 20px;
     height: 20px;
@@ -244,13 +167,13 @@
   }
   input {
     padding-left: 30px;
-    width: 100%;
+    width: $Porcento100;
     height: 35px;
     border-radius: 15px;
     border: 1px solid #000;
     height: 35px;
-    width: 100%;
-    max-width: 1024px;
-    color: #daa520;
+    width: $Porcento100;
+    max-width: $max1024px;
+    color: $colorDaa520;
   }
 }

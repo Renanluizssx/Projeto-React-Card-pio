@@ -1,9 +1,54 @@
 @import "../../styles/funcoes.scss";
-
+@import "../../styles/variaveis.scss";
 .div-container-produtos {
   @include divContainerProdutos();
 }
 
-@include mdItemPratos();
-@include lgItemPratos();
-@include xlItemPratos();
+@include telasPequenas($min300px, $max764px) {
+  .div-container-produtos {
+    width: 100%;
+    height: 400px;
+    &:nth-child(n + 4) {
+      width: 100%;
+    }
+    img {
+      height: 200px;
+    }
+  }
+}
+@include telasMedias($min765px, $max1023px) {
+  .div-container-produtos {
+    width: 47%;
+    height: 400px;
+    &:nth-child(n + 4) {
+      width: 47%;
+    }
+    &:nth-child(n + 5) {
+      width: 96.5%;
+      height: 400px;
+    }
+    img {
+      height: 250px;
+      width: 100%;
+    }
+    .container-padding {
+      width: 100%;
+    }
+  }
+}
+@include telasGrandes($min1024px, $max1443px) {
+  .div-container-produtos {
+    width: 31%;
+    height: 400px;
+    &:nth-child(n + 4) {
+      width: 47%.5;
+    }
+    img {
+      height: 250px;
+      width: 100%;
+    }
+    .container-padding {
+      width: 100%;
+    }
+  }
+}
